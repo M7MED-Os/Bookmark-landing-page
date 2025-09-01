@@ -22,7 +22,7 @@
           <img src="images/logo-bookmark.svg" alt="Logo" />
         </div>
         <nav class="desktop-nav">
-          <ul>
+          <ul class="main-links">
             <li>
               <a href="#features">Features</a>
             </li>
@@ -32,8 +32,8 @@
             <li>
               <a href="#contact">Contact</a>
             </li>
-            <li class="login">
-              <a href="#login">Login</a>
+            <li class="">
+              <a href="#login" class="btn red">Login</a>
             </li>
           </ul>
         </nav>
@@ -74,7 +74,7 @@
     </header>
     <main>
       <section class="landing" id="landing">
-        <div class="container">
+        <div class="container con-flex-center">
           <div class="landing-text">
             <h1>A Simple Bookmark Manager</h1>
             <p>
@@ -88,12 +88,13 @@
             </div>
           </div>
           <div class="landing-image">
+            <div class="decoration"></div>
             <img src="images/illustration-hero.svg" alt="Illustration Hero" />
           </div>
         </div>
       </section>
       <section class="features" id="features">
-        <div class="container con-flex">
+        <div class="container con-flex-center">
           <div class="heading">
             <h2>Features</h2>
             <p>
@@ -163,7 +164,7 @@
         </div>
       </section>
       <section class="download" id="download">
-        <div class="container con-flex">
+        <div class="container con-flex-center">
           <div class="heading">
             <h2>Download the extension</h2>
             <p>
@@ -199,55 +200,121 @@
           </div>
         </div>
       </section>
+      <section class="questions" id="questions">
+        <div class="container con-flex-center">
+          <div class="heading">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+          <div class="content con-flex-center">
+            <div class="ques">
+              <div class="ques-text">
+                <h3>What is Bookmark?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="answer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </p>
+            </div>
+            <div class="ques">
+              <div class="ques-text">
+                <h3>How can I request a new browser?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="answer">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </p>
+            </div>
+            <div class="ques">
+              <div class="ques-text">
+                <h3>What about other Chromium browsers?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="answer">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </p>
+            </div>
+            <div class="ques">
+              <div class="ques-text">
+                <h3>Is there a mobile app?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="answer">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+            <a href="#" class="btn primary">More Info</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container con-flex-center">
+          <div class="text">
+            <p>35,000+ already joined</p>
+            <h3>Stay up-to-date with what we’re doing</h3>
+          </div>
+          <div class="form">
+            <div class="inp">
+              <input type="text" name="emailInp" id="emailInp" />
+              <div class="errorMsg">Make sure it's a valid email</div>
+              <img src="images/icon-error.svg" alt="Error" />
+            </div>
+            <a href="#" class="btn red" id="contactBtn">Contact Us</a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo-bookmark.svg" alt="Logo" />
+          <ul class="main-links">
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
+
 <!--
 
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us. -->
-
-<!-- Question 1 -->
-<!-- What is Bookmark? -->
-
-<!-- Answer 1 -->
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
-
-<!-- Question 2 -->
-<!-- How can I request a new browser? -->
-
-<!-- Answer 2 -->
-<!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
-
-<!-- Question 3 -->
-<!-- Is there a mobile app? -->
-
-<!-- Answer 3 -->
-<!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum. -->
-
-<!-- Question 4 -->
-<!-- What about other Chromium browsers? -->
-
-<!-- Answer 4 -->
-<!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
 
   Features
   Pricing

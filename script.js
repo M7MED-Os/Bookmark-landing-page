@@ -35,3 +35,47 @@ taps.forEach((tap) => {
     targetContent.classList.add("active");
   };
 });
+
+const questios = document.querySelectorAll(".ques-text");
+const answers = document.querySelectorAll(".answer");
+
+questios.forEach(function (thisE) {
+  thisE.onclick = function () {
+    if (thisE.classList.contains("active")) {
+      thisE.classList.remove("active");
+    } else {
+      questios.forEach(function (restE) {
+        restE.classList.remove("active");
+      });
+      thisE.classList.add("active");
+    }
+  };
+});
+
+let inpCont = document.querySelector(".inp");
+let emailInp = document.querySelector('[name="emailInp"]');
+let contactBtn = document.getElementById("contactBtn");
+const re = /^[^\s@]+@[^\s@]+\.[^\s@]{1,}$/;
+
+emailInp.onblur = function () {
+  const emailValue = emailInp.value.trim();
+
+  if (!re.test(emailValue)) {
+    inpCont.classList.add("error");
+    contactBtn.classList.remove("able");
+  } else {
+    inpCont.classList.remove("error");
+    contactBtn.classList.add("able");
+  }
+};
+
+emailInp.oninput = function () {
+  const email = emailInp.value.trim();
+
+  if (inpCont.classList.contains("error")) {
+    if (re.test(email)) {
+      inpCont.classList.remove("error");
+      contactBtn.classList.add("able");
+    }
+  }
+};

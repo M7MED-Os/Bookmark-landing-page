@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 40px;
+      }
+
+      .faq {
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .faq-item {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .faq-question::after {
+        content: "+";
+        position: absolute;
+        right: 20px;
+        transition: transform 0.3s;
+      }
+
+      .faq-item.active .faq-question::after {
+        content: "−";
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        padding: 0 20px;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 200px; /* رقم كبير يكفي أي إجابة */
+        padding: 15px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">Question 1</div>
+        <div class="faq-answer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci
+            sed erat fermentum finibus.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Question 2</div>
+        <div class="faq-answer">
+          <p>
+            Aliquam tincidunt nunc vel diam luctus, ut faucibus felis lacinia.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Question 3</div>
+        <div class="faq-answer">
+          <p>
+            Donec sit amet eros sit amet odio posuere vehicula vitae eget arcu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+
+      questions.forEach((q) => {
+        q.addEventListener("click", () => {
+          const item = q.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
