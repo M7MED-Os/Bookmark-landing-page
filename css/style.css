@@ -646,7 +646,7 @@ header .container .mobile-nav ul:first-child .login a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .contact .container .form .inp {
